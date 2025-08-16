@@ -1,0 +1,126 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Barlow',sans-serif;
+    padding: 100px;
+    margin: 0;
+    Font-size: 13px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 2fr;
+    grid-template-areas:"card-1 card-1 card-2 aside"
+                        "card-3 card-4 card-4 aside";
+    gap: 30px;
+    max-width: 1440px;
+}
+
+
+
+.card-Daniel {
+    background-color: hsl(263, 55%, 52%);
+    grid-area: card-1;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    color: hsl(260, 100%, 95%);
+}
+.header-card-Daniel {
+    display: flex;
+    align-items: center;
+}
+h3,
+h5 {
+    margin: 0;
+    padding: 0;
+}
+img {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+p {
+    font-weight: bold;
+}
+span {
+    position: absolute;
+    top: -73px;
+    left: 300px;
+    font-size: 380px;
+    opacity: 0.1;
+}
+.cards {
+    padding: 10px;
+    box-shadow: 8px 8px 20px hsl(224, 10%, 45%) ;
+}
+
+
+
+.card-Jonathan {
+    background-color: hsl(217, 19%, 35%);
+    grid-area: card-2;
+    padding: 10px;
+    border-radius: 10px;
+    color: hsl(260, 100%, 95%);
+}
+.header-card-Jonathan {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.card-Jeanette-Harmon {
+    background-color: hsl(0, 0%, 100%);
+    grid-area: card-3;
+    padding: 10px;
+    border-radius: 10px;
+    color: hsl(217, 19%, 35%);
+}
+.header-card-Jeanette-Harmon {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.card-Patrick-Abrams {
+    background-color: hsl(219, 29%, 14%);
+    grid-area: card-4;
+    padding: 10px;
+    border-radius: 10px;
+    color: hsl(260, 100%, 95%);
+}
+.header-card-Patrick-Abrams {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.card-Kira-Whittle {
+    background-color: hsl(0, 0%, 100%);
+    grid-area: aside;
+    padding: 10px;
+    border-radius: 10px;
+    color: hsl(217, 19%, 35%);
+}
+.header-card-Kira-Whittle {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width:375px) {
+    body {
+        display: block;
+    }
+    .container {
+        display: block;
+    }
+    .cards {
+        margin-bottom: 20px;
+    }
+}
